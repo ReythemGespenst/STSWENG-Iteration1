@@ -1,75 +1,152 @@
 package ph.edu.dlsu.enlistment;
 
-import org.apache.commons.lang3.*;
+import java.util.ArrayList;
 
-import static org.apache.commons.lang3.StringUtils.*;
+public class Section {
 
-import java.util.Objects;
+    private String name;
+    private String course;
+    private ArrayList<String> prerequisites = new ArrayList<String>();
+    private ArrayList<Student> Students = new ArrayList<Student>();
 
-class Section {
-    private final String sectionId;
-    private final Schedule schedule;
-    private final Room roomName;
+    //Optional
+    private String room;
+    private ArrayList<String> time = new ArrayList<String>();
+    private ArrayList<String> days = new ArrayList<String>();
+    private int maxCapacity;
+    private String professor;
 
-    Section(String sectionId, Schedule schedule, Room roomName) {
-        Objects.requireNonNull(sectionId);
-        Objects.requireNonNull(schedule);
-        Objects.requireNonNull(roomName);
-        isBlank(sectionId);
-        Validate.isTrue(isAlphanumeric(sectionId), "sectionId must be alphanumeric, was: "
-                + sectionId);
-        this.sectionId = sectionId;
-        this.schedule = schedule;
-        this.roomName = roomName;
+    public Section(String name, String course) {
+        this.name = name;
+        this.course = course;
     }
 
-//    boolean hasConflict(Section other){ delete
-//        return this.schedule.equals(other.schedule);
-//    }
+    public Section(String name, String course, ArrayList<String> prerequisites) {
+        this.name = name;
+        this.course = course;
+        this.prerequisites = new ArrayList<String>(prerequisites);
+    }
 
-    void checkConflict(Section other){
-        if(this.schedule.equals(other.schedule)){
-            throw new ScheduleConflictException("this section : " + this +
-                    " and other section " + other +
-                    " has the same schedule at  " + schedule);
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    public void setPrerequisites(ArrayList<String> prerequisites) {
+        this.prerequisites.clear();
+        this.prerequisites = new ArrayList<String>(prerequisites);
+    }
+
+    public void setStudents(ArrayList<Student> students) {
+        this.Students.clear();
+        this.Students = new ArrayList<Student>(students);
+    }
+
+    public void setRoom(String room) {
+        this.room = room;
+    }
+
+    public void setTime(ArrayList<String> time) {
+        this.time.clear();
+        this.time = new ArrayList<String>(time);
+    }
+
+    public void setDays(ArrayList<String> days) {
+        this.days.clear();
+        this.days = new ArrayList<String>(days);
+    }
+
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }
+
+    public void setProfessor(String professor) {
+        this.professor = professor;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public ArrayList<String> getPrerequisites() {
+        return prerequisites;
+    }
+
+    public ArrayList<Student> getStudents() {
+        return Students;
+    }
+
+    public String getRoom() {
+        return room;
+    }
+
+    public ArrayList<String> getTime() {
+        return time;
+    }
+
+    public ArrayList<String> getDays() {
+        return days;
+    }
+
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    public String getProfessor() {
+        return professor;
+    }
+
+    public int StudentCount() {
+        return Students.size();
+    }
+
+    //end of getters and setters
+
+    public int findStudent(Student target) {
+        int i;
+        for (i=0; i<Students.size(); i++){
+            if (Students.get(i) == target){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void addStudent(Student student) {
+        if (Students.size() < maxCapacity && student.VerifyClass(this) == true){
+            Students.add(student);
         }
     }
 
-    void enlistStudent(){
-        if (!roomName.isVacant()){
-            throw new IllegalStateException("Room capacity is already full for room " + roomName);
+    public void removeStudent(Student student) {
+        Students.remove(findStudent(student));
+    }
+
+
+    public int findPreReq(String target) {
+        int i;
+        for (i=0; i<prerequisites.size(); i++){
+            if (prerequisites.get(i) == target){
+                return i;
+            }
         }
-        roomName.addStudent();
+        return -1;
     }
 
-    void cancelEnlistment(){
-        roomName.removeStudent();
+    public void addPreReq(String course) {
+            prerequisites.add(course);
     }
 
-//    Schedule getSchedule(){
-//        return schedule; delete
-//    }
-
-    @Override
-    public String toString() {
-        return sectionId;
+    public void removePreReq(String course) {
+        prerequisites.remove(findPreReq(course));
     }
-
-    @Override
-    public final boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Section section)) return false;
-
-        return Objects.equals(sectionId, section.sectionId);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(sectionId);
-    }
-
-
-
 
 
 
