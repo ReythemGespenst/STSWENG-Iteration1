@@ -1,4 +1,4 @@
-package ph.edu.dlsu.enlisment;
+package ph.edu.dlsu.enlistment;
 
 import org.apache.commons.lang3.*;
 
