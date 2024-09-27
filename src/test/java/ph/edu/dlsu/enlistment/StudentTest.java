@@ -1,12 +1,12 @@
-package ph.edu.dlsu.enlisment;
+package ph.edu.dlsu.enlistment;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static ph.edu.dlsu.enlisment.Days.*;
-import static ph.edu.dlsu.enlisment.Period.*;
+import static ph.edu.dlsu.enlistment.Days.*;
+import static ph.edu.dlsu.enlistment.Period.*;
 
 class StudentTest {
 

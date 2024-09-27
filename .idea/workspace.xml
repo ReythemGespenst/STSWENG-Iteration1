@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05b78f02-9b5c-41ba-9a89-2c4179f06612" name="Changes" comment="added commits">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/enlistment/Section.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ph/edu/dlsu/enlistment/SectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ph/edu/dlsu/enlistment/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ph/edu/dlsu/enlistment/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +73,9 @@
     &quot;accountId&quot;: &quot;08812c8b-0a38-429a-af84-b1b11a2353f2&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -87,13 +89,15 @@
   "keyToString": {
     "Gradle.Iteration-1 [dependencies].executor": "Run",
     "Gradle.Iteration-1 [test].executor": "Run",
+    "Gradle.StudentTest.enlist_with_no_conflict_room_capacity_not_exceeded.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "folder-config",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "editor.preferences.folding"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Iteration-1 [test]">
+  <component name="RunManager" selected="Gradle.StudentTest.enlist_with_no_conflict_room_capacity_not_exceeded (1)">
     <configuration name="Iteration-1 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,6 +142,54 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="StudentTest.enlist_with_no_conflict_room_capacity_not_exceeded (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ph.edu.dlsu.enlistment.StudentTest.enlist_with_no_conflict_room_capacity_not_exceeded&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="StudentTest.enlist_with_no_conflict_room_capacity_not_exceeded" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ph.edu.dlsu.enlisment.StudentTest.enlist_with_no_conflict_room_capacity_not_exceeded&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'Iteration-1.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -162,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StudentTest.enlist_with_no_conflict_room_capacity_not_exceeded (1)" />
+        <item itemvalue="Gradle.StudentTest.enlist_with_no_conflict_room_capacity_not_exceeded" />
         <item itemvalue="Gradle.Iteration-1 [test]" />
         <item itemvalue="Gradle.Iteration-1 [dependencies]" />
         <item itemvalue="Gradle.Tests in 'Iteration-1.test'" />
-        <item itemvalue="Gradle.Iteration-1 [test]" />
-        <item itemvalue="Gradle.Iteration-1 [dependencies]" />
       </list>
     </recent_temporary>
   </component>
