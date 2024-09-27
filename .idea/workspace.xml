@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05b78f02-9b5c-41ba-9a89-2c4179f06612" name="Changes" comment="added commits">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/enlistment/Section.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ph/edu/dlsu/enlistment/SectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/enlistment/Schedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ph/edu/dlsu/enlistment/ScheduleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_27_2024_4_29_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,13 @@
         <projects_view />
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <excluded-from-favorite>
@@ -88,11 +98,24 @@
     "Gradle.Iteration-1 [dependencies].executor": "Run",
     "Gradle.Iteration-1 [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "folder-config",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "ScheduleBranch",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ph.edu.dlsu.enlistment" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.Iteration-1 [test]">
     <configuration name="Iteration-1 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
