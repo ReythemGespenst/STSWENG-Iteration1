@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05b78f02-9b5c-41ba-9a89-2c4179f06612" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="05b78f02-9b5c-41ba-9a89-2c4179f06612" name="Changes" comment="added commits">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ph/edu/dlsu/enlistment/Section.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ph/edu/dlsu/enlistment/SectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <excluded-from-favorite>
@@ -46,7 +57,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Folders-configuration" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,16 +83,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Iteration-1 [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Iteration-1 [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;buildUpdateBranch&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Iteration-1 [dependencies].executor": "Run",
+    "Gradle.Iteration-1 [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "folder-config",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.Iteration-1 [test]">
     <configuration name="Iteration-1 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -168,6 +179,19 @@
       <option name="presentableId" value="Default" />
       <updated>1727420553635</updated>
     </task>
+    <task id="LOCAL-00001" summary="added commits">
+      <option name="closed" value="true" />
+      <created>1727425810785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727425810785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="added commits" />
   </component>
 </project>
